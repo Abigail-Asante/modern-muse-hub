@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Wheat, Building2, Laptop } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -75,10 +76,12 @@ export function ProjectsSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <Button variant="outline" size="lg">
-              View All Projects
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link to="/what-we-do">
+              <Button variant="outline" size="lg">
+                View All Projects
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
 
@@ -113,9 +116,11 @@ export function ProjectsSection() {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                <Button variant="link" className="p-0 h-auto text-primary">
-                  Learn More <ArrowRight className="w-4 h-4 ml-1" />
-                </Button>
+                <Link to={project.link}>
+                  <Button variant="link" className="p-0 h-auto text-primary">
+                    Learn More <ArrowRight className="w-4 h-4 ml-1" />
+                  </Button>
+                </Link>
               </div>
             </motion.article>
           ))}

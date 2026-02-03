@@ -56,7 +56,7 @@
     --mida-cream: 45 30% 96%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 75% 25% / 0.95) 0%, hsl(215 50% 15% / 0.9) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 75% 25% / 0.5) 0%, hsl(215 50% 15% / 0.6) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(45 95% 50%) 0%, hsl(40 90% 40%) 100%);
     --gradient-stats: linear-gradient(180deg, hsl(210 75% 25%) 0%, hsl(210 65% 35%) 100%);
 
@@ -130,7 +130,12 @@
     font-feature-settings: "cv11", "ss01";
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif font-bold tracking-tight;
   }
 }
@@ -205,6 +210,7 @@
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -212,8 +218,13 @@
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   @keyframes scaleIn {
@@ -221,6 +232,7 @@
       opacity: 0;
       transform: scale(0.95);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -232,6 +244,7 @@
       opacity: 0;
       transform: translateX(30px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);

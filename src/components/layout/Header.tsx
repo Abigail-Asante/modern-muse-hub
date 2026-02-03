@@ -26,7 +26,15 @@ const navigation = [
       { name: 'Digital Youth Hubs', href: '/what-we-do/digital-youth-hubs' },
     ],
   },
-  { name: 'Media', href: '/media' },
+  {
+    name: 'Media',
+    href: '/media',
+    children: [
+      { name: 'News & Updates', href: '/media/news' },
+      { name: 'Press Releases', href: '/media' },
+      { name: 'Multimedia Gallery', href: '/media' },
+    ]
+  },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -64,8 +72,8 @@ export function Header() {
           <Link to="/" className="flex items-center gap-3 group">
             <div className={cn(
               "w-12 h-12 rounded-full flex items-center justify-center font-serif font-bold text-lg transition-all duration-300",
-              isScrolled 
-                ? "bg-primary text-primary-foreground" 
+              isScrolled
+                ? "bg-primary text-primary-foreground"
                 : "bg-white text-primary"
             )}>
               MiDA
