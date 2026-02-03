@@ -29,10 +29,9 @@ export function AboutSection() {
               <span className="text-primary">Economic Growth</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              The Millennium Development Authority (MiDA) is a Government of Ghana organization 
-              established by an Act of Parliament. We oversee, manage and implement programmes 
-              under the Compact Agreement signed with the Millennium Challenge Corporation of 
-              the United States of America.
+              The Millennium Development Authority (MiDA) is the entity responsible for the oversight, management,
+              and implementation of national development programmes funded by the Millennium Challenge Corporation,
+              the Government of Ghana, and development partners in an effective and sustainable manner.
             </p>
 
             <ul className="space-y-4 mb-10">
@@ -71,7 +70,7 @@ export function AboutSection() {
                 {/* Decorative circles */}
                 <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-secondary/30 rounded-full blur-2xl" />
                 <div className="absolute bottom-1/4 left-1/4 w-24 h-24 bg-accent/30 rounded-full blur-2xl" />
-                
+
                 <div className="relative h-full flex flex-col justify-center items-center text-center text-white">
                   <span className="text-7xl sm:text-8xl font-serif font-bold mb-4">20+</span>
                   <span className="text-xl sm:text-2xl font-medium">Years of Impact</span>
