@@ -14,6 +14,13 @@ import Contact from "./pages/Contact";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 
+// Admin Pages
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminProjects from "./pages/admin/AdminProjects";
+import AdminNews from "./pages/admin/AdminNews";
+import AdminMedia from "./pages/admin/AdminMedia";
+import AdminSettings from "./pages/admin/AdminSettings";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -35,6 +42,14 @@ const App = () => (
           <Route path="/media" element={<Media />} />
           <Route path="/media/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/projects" element={<AdminProjects />} />
+          <Route path="/admin/news" element={<AdminNews />} />
+          <Route path="/admin/media" element={<AdminMedia />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
